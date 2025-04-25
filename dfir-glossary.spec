@@ -1,9 +1,9 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-__version__ = '2.0.1'
+__version__ = '1.0.0'
 
 a = Analysis(
-    ['ms_word_parser/parse_docx.py'],
+    ['dfir-glossary.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name=f'parse-docx-v{__version__}',
+    name=f'dfir-glossary-v{__version__}',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -36,5 +36,5 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
     version='version.txt',
-    icon=['icons/logo.ico'],
+    icon=['fp.ico'],
 )
