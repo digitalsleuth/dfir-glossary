@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["dfir_glossary"]
+
+[tool.setuptools.exclude-package-data]
+exclude = ["debian*", "binaries*", "build*", "dist*", "archive*"]
+
+[tool.setuptools.package-data]
+dfir_glossary = ["glossary.sqlite"]
+
+[project]
+name = "dfir-glossary"
+version = "1.0.0"
+dependencies = [
+    "PyQt6",
+    "pytablericons"
+]
+requires-python = ">=3.9"
+authors = [
+  {name = "Corey Forman (digitalsleuth)", email = "github@digitalsleuth.ca"}
+]
+maintainers = [
+  {name = "Corey Forman (digitalsleuth)", email = "github@digitalsleuth.ca"}
+]
+description = "DFIR Glossary - A gathering of terms commonly used in DFIR"
+readme = "README.md"
+keywords = ["digital forensics", "dfir", "glossary", "terms", "definitions"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/digitalsleuth/dfir-glossary"
+
+[project.scripts]
+dfir-glossary = "dfir_glossary.dfir_glossary:main"
