@@ -3,7 +3,7 @@
 __version__ = '1.0.0'
 
 a = Analysis(
-    ['dfir-glossary.py'],
+    ['dfir_glossary/dfir_glossary.py'],
     pathex=[],
     binaries=[],
     datas=[],

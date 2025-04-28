@@ -1,0 +1,4 @@
+*.ico
+dist*
+build*
+binaries*
